@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>yodakles.veworld.vet</title>
-  <meta name="description" content="VeChain-Identität von yodakles. Freiwilliges Trinkgeld in VET an yodakles.veworld.vet." />
+  <meta name="description" content="VeChain-Identitaet von yodakles. Freiwilliges Trinkgeld in VET an yodakles.veworld.vet." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -114,13 +114,13 @@
       <div class="avatar" aria-hidden="true"><span>Y</span></div>
       <div>
         <h1>yodakles.veworld.vet</h1>
-        <div class="owner">On-chain Identität · VeChain</div>
+        <div class="owner">On-chain Identitaet · VeChain</div>
         <div class="badge">Verified Human</div>
       </div>
     </div>
 
     <p class="lead">
-      Das ist mein VeChain-Name. Überweisungen an
+      Das ist mein VeChain-Name. Ueberweisungen an
       <strong style="color:#fff">yodakles.veworld.vet</strong>
       landen direkt in meiner VeWorld-Wallet.
     </p>
@@ -133,14 +133,14 @@
         Das ist freiwillig, ohne Gegenleistung und ohne Druck.
       </p>
       <p>
-        Jede Überweisung auf dem VeChain-Mainnet ist echt — kein Testnetz,
+        Jede Ueberweisung auf dem VeChain-Mainnet ist echt — kein Testnetz,
         kein Demo-Modus. Schick nur einen Betrag, den du bewusst abgeben willst.
-        Auch sehr kleine Beträge sind willkommen.
+        Auch sehr kleine Betraege sind willkommen.
       </p>
     </div>
 
     <div class="section">
-      <div class="label">Empfängername (in VeWorld eintragen)</div>
+      <div class="label">Empfaengername (in VeWorld eintragen)</div>
       <div class="row">
         <span class="addr" style="color:var(--accent)">yodakles.veworld.vet</span>
         <button class="copy" type="button" data-copy="yodakles.veworld.vet">Kopieren</button>
@@ -156,8 +156,7 @@
     </div>
 
     <div class="actions">
-      <button class="copy btn-as" type="button" data-copy="yodakles.veworld.vet" id="copyNameBtn" hidden></button>
-      <a class="btn primary" href="https://explore.vechain.org/" target="_blank" rel="noopener">Transaktionen im Explorer prüfen</a>
+      <a class="btn primary" href="https://explore.vechain.org/accounts/0xAf9616b56Aa9BAB03f5db5294c62F51484bb40A1" target="_blank" rel="noopener">Transaktionen im Explorer pruefen</a>
       <a class="btn ghost" href="https://vet.domains" target="_blank" rel="noopener">Name auf vet.domains</a>
     </div>
 
@@ -169,15 +168,10 @@
   <div class="toast" id="toast">Kopiert</div>
 
   <script>
-    // Volle Adresse aus VeWorld hier einsetzen:
     const WALLET = "0xAf9616b56Aa9BAB03f5db5294c62F51484bb40A1";
-
     const walletEl = document.getElementById("wallet");
-    walletEl.textContent = WALLET.length > 20
-      ? WALLET.slice(0, 10) + "…" + WALLET.slice(-6)
-      : WALLET + "…";
+    walletEl.textContent = WALLET.slice(0, 10) + "…" + WALLET.slice(-6);
     document.getElementById("copyWallet").dataset.copy = WALLET;
-
     const toast = document.getElementById("toast");
     document.querySelectorAll(".copy").forEach((btn) => {
       btn.addEventListener("click", async () => {
@@ -187,12 +181,14 @@
           toast.classList.add("show");
           setTimeout(() => toast.classList.remove("show"), 1400);
         } catch (e) {
-          toast.textContent = "Kopieren nicht möglich";
+          toast.textContent = "Kopieren nicht moeglich";
           toast.classList.add("show");
           setTimeout(() => toast.classList.remove("show"), 1400);
         }
       });
     });
   </script>
+  <script data-goatcounter="https://yodakles.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
